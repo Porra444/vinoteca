@@ -1,0 +1,42 @@
+import json
+
+class Vinoteca:
+    archivoDeDatos = "vinoteca.json"
+    bodegas = []
+    cepas = []
+    vinos = []
+
+    @classmethod
+    def inicializar(cls):
+        datos = cls.__parsearArchivoDeDatos()
+        cls.__convertirJsonAListas(datos)
+
+    @classmethod
+    def __parsearArchivoDeDatos(cls):
+        with open(cls.archivoDeDatos, 'r') as archivo:
+            return json.load(archivo)
+
+    @classmethod
+    def __convertirJsonAListas(cls, datos):
+        #Importacion tardia
+        from bodega import Bodega  
+        from cepa import Cepa  
+        from vino import Vino  
+
+        for bodega_data in datos["bodegas"]:
+            bodega = Bodega(bodega_data["id"], bodega_data["nombre"])
+            cls.bodegas.append(bodega)
+
+        for cepa_data in datos["cepas"]:
+            cepa = Cepa(cepa_data["id"], cepa_data["nombre"])
+            cls.cepas.append(cepa)
+
+        for vino_data in datos["vinos"]:
+            vino = Vino(
+                vino_data["id"],
+                vino_data["nombre"],
+                vino_data["bodega"],
+                vino_data["cepas"],
+                vino_data["partidas"]
+            )
+            cls.vinos.append(vino)

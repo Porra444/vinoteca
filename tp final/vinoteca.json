@@ -1,0 +1,75 @@
+{
+    "bodegas": [
+        {
+            "id": "a0900e61-0f72-67ae-7e9d-4218da29b7d8",
+            "nombre": "Casa La Primavera Bodegas y Viñedos"
+        },
+        {
+            "id": "e12465a5-1a4f-42d5-b3cc-2480bca9e4a8",
+            "nombre": "Bodega Sottano"
+        },
+        {
+            "id": "baf1e1c4-7468-4c5e-87cf-49f504a60139",
+            "nombre": "La Iride"
+        },
+        {
+            "id": "c5b0e4d7-1e4c-4f0b-b1d4-6efb6e111e9b",
+            "nombre": "Escorihuela Gascon"
+        }
+    ],
+    "cepas": [
+        {
+            "id": "33ccaa9d-4710-9942-002d-1b5cb9912e5d",
+            "nombre": "Chardonnay"
+        },
+        {
+            "id": "d8f27ec1-92bc-4670-b9a6-9c6f93d5208d",
+            "nombre": "Malbec"
+        },
+        {
+            "id": "9a2d89d0-04c4-4e78-bc92-ff2c60e90ff9",
+            "nombre": "Cabernet Sauvignon"
+        },
+        {
+            "id": "2f36ef51-70ae-4f85-bb8a-6b7343d91f25",
+            "nombre": "Merlot"
+        }
+    ],
+    "vinos": [
+        {
+            "id": "4823ad54-0a3a-38b8-adf6-795512994a4f",
+            "nombre": "Abducido",
+            "bodega": "baf1e1c4-7468-4c5e-87cf-49f504a60139",
+            "cepas": ["9a2d89d0-04c4-4e78-bc92-ff2c60e90ff9", "d8f27ec1-92bc-4670-b9a6-9c6f93d5208d"],
+            "partidas": [2024, 2023, 2022]
+        },
+        {
+            "id": "ea3d6c45-e747-2e86-ddf8-0746cc13f21c",
+            "nombre": "Familia Gascon",
+            "bodega": "c5b0e4d7-1e4c-4f0b-b1d4-6efb6e111e9b",
+            "cepas": ["9a2d89d0-04c4-4e78-bc92-ff2c60e90ff9", "d8f27ec1-92bc-4670-b9a6-9c6f93d5208d", "2f36ef51-70ae-4f85-bb8a-6b7343d91f25"],
+            "partidas": [2020, 2021]
+        },
+        {
+            "id": "205db14f-c0c0-a286-0a5e-0daa7a3f37f0",
+            "nombre": "Sin Palabra",
+            "bodega": "a0900e61-0f72-67ae-7e9d-4218da29b7d8",
+            "cepas": ["33ccaa9d-4710-9942-002d-1b5cb9912e5d", "9a2d89d0-04c4-4e78-bc92-ff2c60e90ff9", "d8f27ec1-92bc-4670-b9a6-9c6f93d5208d", "2f36ef51-70ae-4f85-bb8a-6b7343d91f25"],
+            "partidas": [2022, 2021, 2020]
+        },
+        {
+            "id": "f87d5618-3af6-4c23-8f4f-82a243c4f58f",
+            "nombre": "Oveja Black",
+            "bodega": "a0900e61-0f72-67ae-7e9d-4218da29b7d8",
+            "cepas": ["33ccaa9d-4710-9942-002d-1b5cb9912e5d", "9a2d89d0-04c4-4e78-bc92-ff2c60e90ff9"],
+            "partidas": [2022, 2021]
+        },
+        {
+            "id": "0f1f62a0-eaf8-4213-8df9-5899f891d9a5",
+            "nombre": "Sottano",
+            "bodega": "e12465a5-1a4f-42d5-b3cc-2480bca9e4a8",
+            "cepas": ["d8f27ec1-92bc-4670-b9a6-9c6f93d5208d"],
+            "partidas": [2021]
+        }
+    ]
+}
